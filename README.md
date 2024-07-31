@@ -20,10 +20,7 @@ This repository contains solutions for the weekly assessments of the Deep Skilli
 - Data Structures and Algorithms
 - Hands-On Exercises
 
-### Contents
-- [Design Patterns and Principles](week1/design-patterns)
-- [Data Structures and Algorithms](week1/data-structures)
-- [Hands-On Exercises](week1/hands-on)
+
 
 ## Week 2
 
@@ -32,10 +29,7 @@ This repository contains solutions for the weekly assessments of the Deep Skilli
 - PL/SQL Programming
 - Hands-On Exercises
 
-### Contents
-- [Spring Core and Maven](week2/spring-core)
-- [PL/SQL Programming](week2/plsql)
-- [Hands-On Exercises](week2/hands-on)
+
 
 ## Week 3
 
@@ -43,9 +37,7 @@ This repository contains solutions for the weekly assessments of the Deep Skilli
 - Spring Data JPA with Spring Boot, Hibernate
 - Hands-On Exercises
 
-### Contents
-- [Spring Data JPA with Spring Boot, Hibernate](week3/spring-data-jpa)
-- [Hands-On Exercises](week3/hands-on)
+
 
 ## Week 4 and 5
 
@@ -53,17 +45,14 @@ This repository contains solutions for the weekly assessments of the Deep Skilli
 - Spring REST using Spring Boot 3
 - Hands-On Exercises
 
-### Contents
-- [Spring REST using Spring Boot 3](week4-5/spring-rest)
-- [Hands-On Exercises](week4-5/hands-on)
+
 
 ## Final Assessment
 
 ### Topics Covered
 - Deep Skilling Final Assessment
 
-### Contents
-- [Final Assessment](final-assessment)
+
 
 ## How to Use This Repository
 
