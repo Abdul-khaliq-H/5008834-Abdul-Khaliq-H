@@ -58,5 +58,5 @@ This repository contains solutions for the weekly assessments of the Deep Skilli
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/deep-skilling-program.git
+   git clone https://github.com/Abdul-khaliq-H/5008834-Abdul-Khaliq-H
 
