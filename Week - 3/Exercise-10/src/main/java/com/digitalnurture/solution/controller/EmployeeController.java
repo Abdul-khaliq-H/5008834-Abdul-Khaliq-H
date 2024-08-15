@@ -37,7 +37,7 @@ public class EmployeeController {
     // Get employee by ID
     @GetMapping("/{id}")
     public ResponseEntity<Employee> getEmployeeById(@PathVariable Long id) {
-        Employee employee = employeeService.getEmployeeById(id);
+        Employee employee = employeeService.getEmployeeById(String.valueOf(id));
         if (employee != null) {
             return new ResponseEntity<>(employee, HttpStatus.OK);
         }
@@ -47,7 +47,7 @@ public class EmployeeController {
     // Update employee by ID
     @PutMapping("/{id}")
     public ResponseEntity<Employee> updateEmployee(@PathVariable Long id, @RequestBody Employee employee) {
-        Employee updatedEmployee = employeeService.updateEmployee(id, employee);
+        Employee updatedEmployee = employeeService.updateEmployee(String.valueOf(id), employee);
         if (updatedEmployee != null) {
             return new ResponseEntity<>(updatedEmployee, HttpStatus.OK);
         }
@@ -57,18 +57,10 @@ public class EmployeeController {
     // Delete employee by ID
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteEmployee(@PathVariable Long id) {
-        if (employeeService.deleteEmployee(id)) {
+        if (employeeService.deleteEmployee(String.valueOf(id))) {
             return new ResponseEntity<>(HttpStatus.NO_CONTENT);
         }
         return new ResponseEntity<>(HttpStatus.NOT_FOUND);
     }
-    @GetMapping("/page")
-    public ResponseEntity<Page<Employee>> getEmployeesPaginated(
-            @RequestParam(defaultValue = "0") int page,
-            @RequestParam(defaultValue = "10") int size,
-            @RequestParam(defaultValue = "id") String sortBy,
-            @RequestParam(defaultValue = "asc") String sortDir) {
-        Page<Employee> employees = employeeService.getEmployeesPaginated(page, size, sortBy, sortDir);
-        return new ResponseEntity<>(employees, HttpStatus.OK);
-    }
+
 }
